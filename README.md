@@ -1,5 +1,7 @@
 # AeroVision — Inspection automatisée de pièces par Computer Vision
 
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.5-orange) ![Licence](https://img.shields.io/badge/licence-MIT-green)
+
 **Projet 04 du portfolio** · Python · PyTorch · OpenCV · PatchCore · YOLO · FastAPI · React · Docker
 
 Une caméra photographie une pièce ; AeroVision identifie la pièce, détecte et segmente les
