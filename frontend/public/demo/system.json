@@ -1,0 +1,199 @@
+{
+ "mode": "patchcore",
+ "patchcore_categories": [
+  "cable",
+  "grid",
+  "metal_nut",
+  "screw",
+  "transistor"
+ ],
+ "patchcore_reports": {
+  "cable": {
+   "evaluation_image": {
+    "n": 105,
+    "n_defective": 64,
+    "image_auroc": 0.991234756097561,
+    "image_f1_oracle": 0.9767441860465116,
+    "image_f1_at_threshold": 0.9692307692307692,
+    "recall": 0.984375,
+    "false_negative_rate": 0.015625,
+    "false_positive_rate": 0.07317073170731707,
+    "confusion": {
+     "tp": 63,
+     "fn": 1,
+     "fp": 3,
+     "tn": 38
+    }
+   },
+   "evaluation_pixel": {
+    "pixel_auroc": 0.9870717902499998,
+    "pixel_iou_sampled": 0.9069442015042855
+   },
+   "split": {
+    "fit": 202,
+    "normal_holdout": 22,
+    "calibration": 45,
+    "evaluation": 105
+   }
+  },
+  "grid": {
+   "evaluation_image": {
+    "n": 55,
+    "n_defective": 40,
+    "image_auroc": 0.9966666666666667,
+    "image_f1_oracle": 0.9873417721518987,
+    "image_f1_at_threshold": 0.975,
+    "recall": 0.975,
+    "false_negative_rate": 0.025,
+    "false_positive_rate": 0.06666666666666667,
+    "confusion": {
+     "tp": 39,
+     "fn": 1,
+     "fp": 1,
+     "tn": 14
+    }
+   },
+   "evaluation_pixel": {
+    "pixel_auroc": 0.98514117245,
+    "pixel_iou_sampled": 0.9129980032328611
+   },
+   "split": {
+    "fit": 238,
+    "normal_holdout": 26,
+    "calibration": 23,
+    "evaluation": 55
+   }
+  },
+  "metal_nut": {
+   "evaluation_image": {
+    "n": 79,
+    "n_defective": 64,
+    "image_auroc": 0.996875,
+    "image_f1_oracle": 0.9846153846153847,
+    "image_f1_at_threshold": 0.9841269841269841,
+    "recall": 0.96875,
+    "false_negative_rate": 0.03125,
+    "false_positive_rate": 0.0,
+    "confusion": {
+     "tp": 62,
+     "fn": 2,
+     "fp": 0,
+     "tn": 15
+    }
+   },
+   "evaluation_pixel": {
+    "pixel_auroc": 0.9888460327,
+    "pixel_iou_sampled": 0.9211262547021796
+   },
+   "split": {
+    "fit": 198,
+    "normal_holdout": 22,
+    "calibration": 36,
+    "evaluation": 79
+   }
+  },
+  "screw": {
+   "evaluation_image": {
+    "n": 112,
+    "n_defective": 83,
+    "image_auroc": 0.9655172413793103,
+    "image_f1_oracle": 0.9411764705882354,
+    "image_f1_at_threshold": 0.9349112426035503,
+    "recall": 0.9518072289156626,
+    "false_negative_rate": 0.04819277108433735,
+    "false_positive_rate": 0.2413793103448276,
+    "confusion": {
+     "tp": 79,
+     "fn": 4,
+     "fp": 7,
+     "tn": 22
+    }
+   },
+   "evaluation_pixel": {
+    "pixel_auroc": 0.99159026335,
+    "pixel_iou_sampled": 0.9200702131333091
+   },
+   "split": {
+    "fit": 288,
+    "normal_holdout": 32,
+    "calibration": 48,
+    "evaluation": 112
+   }
+  },
+  "transistor": {
+   "evaluation_image": {
+    "n": 70,
+    "n_defective": 28,
+    "image_auroc": 0.9982993197278911,
+    "image_f1_oracle": 0.9824561403508771,
+    "image_f1_at_threshold": 0.9629629629629629,
+    "recall": 0.9285714285714286,
+    "false_negative_rate": 0.07142857142857142,
+    "false_positive_rate": 0.0,
+    "confusion": {
+     "tp": 26,
+     "fn": 2,
+     "fp": 0,
+     "tn": 42
+    }
+   },
+   "evaluation_pixel": {
+    "pixel_auroc": 0.9734309442,
+    "pixel_iou_sampled": 0.8746456922558125
+   },
+   "split": {
+    "fit": 192,
+    "normal_holdout": 21,
+    "calibration": 30,
+    "evaluation": 70
+   }
+  }
+ },
+ "classifier": {
+  "classes": [
+   "cable",
+   "grid",
+   "metal_nut",
+   "screw",
+   "transistor"
+  ],
+  "test_accuracy": 1.0,
+  "n_train": 1241,
+  "n_test": 603
+ },
+ "yolo": false,
+ "defect_classes": [
+  "crack",
+  "scratch",
+  "hole",
+  "contamination",
+  "deformation",
+  "missing",
+  "misplacement",
+  "cut",
+  "color",
+  "surface_texture",
+  "other"
+ ],
+ "decision_policy": {
+  "review_low": 0.2,
+  "review_high": 0.8
+ },
+ "defect_labels_fr": {
+  "crack": "Fissure / cassure",
+  "scratch": "Rayure",
+  "hole": "Trou / perforation",
+  "contamination": "Contamination / corps étranger",
+  "deformation": "Déformation",
+  "missing": "Élément manquant",
+  "misplacement": "Mauvais positionnement",
+  "cut": "Coupure",
+  "color": "Décoloration",
+  "surface_texture": "Défaut de texture",
+  "other": "Autre / combiné",
+  "unknown": "Anomalie non typée"
+ },
+ "demo": true,
+ "generated_at": "2026-11-18T14:13:47.100601+00:00",
+ "disclaimer": "Démonstrateur d'aide à l'inspection. Non qualifié pour la libération de pièces aéronautiques ; décision finale humaine obligatoire."
+}

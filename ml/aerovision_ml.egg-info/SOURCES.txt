@@ -1,0 +1,16 @@
+pyproject.toml
+aerovision_ml/__init__.py
+aerovision_ml/baseline.py
+aerovision_ml/calibration.py
+aerovision_ml/classifier.py
+aerovision_ml/data.py
+aerovision_ml/metrics.py
+aerovision_ml/patchcore.py
+aerovision_ml/postprocess.py
+aerovision_ml/taxonomy.py
+aerovision_ml.egg-info/PKG-INFO
+aerovision_ml.egg-info/SOURCES.txt
+aerovision_ml.egg-info/dependency_links.txt
+aerovision_ml.egg-info/requires.txt
+aerovision_ml.egg-info/top_level.txt
+tests/test_ml.py

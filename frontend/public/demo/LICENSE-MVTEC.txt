@@ -1,0 +1,10 @@
+Images issues du dataset MVTec AD
+(c) MVTec Software GmbH — https://www.mvtec.com/company/research/datasets/mvtec-ad
+Licence : Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0) — https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Les images dérivées (cartes d'anomalie, superpositions, masques) sont distribuées sous la
+même licence. Usage non commercial uniquement.
+
+Référence : Bergmann et al., "MVTec AD — A Comprehensive Real-World Dataset for
+Unsupervised Anomaly Detection", CVPR 2019.

@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+sqlalchemy>=2.0
+pydantic-settings>=2.2
+psycopg[binary]>=3.1     # si PostgreSQL
+httpx>=0.27              # tests (TestClient)
+# Le paquet ML (torch, opencv, scikit-learn) s'installe via : pip install -e ../ml

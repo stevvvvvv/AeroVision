@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aerovision-ml"
+version = "0.1.0"
+description = "AeroVision — détection d'anomalies visuelles sur pièces industrielles"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26",
+  "opencv-python-headless>=4.9",
+  "torch>=2.2",
+  "torchvision>=0.17",
+  "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+yolo = ["ultralytics>=8.2"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["aerovision_ml*"]
