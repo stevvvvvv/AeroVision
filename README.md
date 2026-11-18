@@ -167,3 +167,5 @@ licence. Détails : [docs/donnees.md](docs/donnees.md).
 ## Auteur
 
 Steven Jansen — Mastère Big Data, Développement & IA (IPSSI), ingénieur aéronautique et spatial (IPSA).
+
+Démo : https://stevvvvvv.github.io/AeroVision/
